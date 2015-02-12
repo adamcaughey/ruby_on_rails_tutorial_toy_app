@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :microposts
+
   resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -6,8 +8,8 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-  root 'application#hello'
-  # Example of regular route:
+  root 'users#index'
+  # Example of regular route:rails
   #   get 'products/:id' => 'catalog#view'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
